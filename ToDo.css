@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(125deg,rgb(41, 41, 158),purple);
+    padding: 10px;
+}
+
+.todo{
+    background-color: white;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;   /*top left-right bottom */
+    padding: 40px 30px 70px;  /*top left-right bottom */
+    border-radius: 10px;
+}
+.todo h2{
+    color: black;
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    /* background: transparent; */
+    background:transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;  /*top-bottom left-right*/
+    background-color: #ff5945;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+ul li{
+    /* background-color: #ff5945; */
+    font-size: 14px;
+    list-style: none;
+    padding: 12px 8px 13px 50px;  /*top right bottom left*/
+    user-select: none;
+    cursor: pointer;
+    position: relative; 
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    /* background-color: #ff5945; */
+    height: 28px;
+    width: 28px;
+    /* border-radius: 50%; */
+    background-image: url(unchecked.png);
+    left: 8px;
+    top: 8px;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+
+/* difference between task completed and other would be that those would have these class of checked */ 
+/* and these tasks now we would comment cause we will have to add them using the add button so when someone clicks on the add button this thing should happen with this class and css for that class is already designed */
+
+ul li span {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+    color: #fffefe;
+    background-color: #ff5945;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 25px;
+}
