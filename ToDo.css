@@ -90,7 +90,8 @@ ul li.checked::before{
 }
 
 /* difference between task completed and other would be that those would have these class of checked */ 
-/* and these tasks now we would comment cause we will have to add them using the add button so when someone clicks on the add button this thing should happen with this class and css for that class is already designed */
+/* and these tasks now we would comment cause we will have to add them using the add button so when someone 
+clicks on the add button this thing should happen with this class and css for that class is already designed */
 
 ul li span {
     position: absolute;
